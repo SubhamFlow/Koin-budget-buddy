@@ -2,6 +2,18 @@
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Environment setup
+
+Copy `.env.example` to `.env.local` for local development and fill in the provider credentials. Never commit `.env.local` or expose these values in client-side code.
+
+For deployment, configure the same variables in the hosting provider. Set `NEXTAUTH_URL` to the deployed HTTPS URL and add this Google OAuth redirect URI:
+
+```text
+https://your-domain.com/api/auth/callback/google
+```
+
+Use a MongoDB Atlas URI with an explicit database name, such as `/koin`. Rotate any credentials that have been exposed and use fresh values in production.
+
 ## Getting Started
 
 First, run the development server:
