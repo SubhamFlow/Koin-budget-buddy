@@ -22,6 +22,7 @@ This repository is built using a modern Next.js project setup:
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) & [PostCSS](https://postcss.org/)
 * **Code Quality & Linting:** [ESLint](https://eslint.org/) flat config setup (`eslint.config.mjs`)
 * **Package Manager:** `npm` (configured via `package.json` and `package-lock.json`)
+* **Database:** `MongoDB Atlas` for cloud storage
 
 ---
 
